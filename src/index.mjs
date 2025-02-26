@@ -235,7 +235,12 @@ console.log("Q12: ", messageString());
 //    Q13: Good Evening
 
 //PUT YOUR CODE HERE
-function combineStrings() {}
+function combineStrings() {
+  let stringOne = "Hawaii ";
+  let stringTwo = "is the best state in the US";
+  return stringOne + stringTwo;
+}
+console.log("Q13: ", combineStrings());
 // ---------- QUESTION 14 ----------
 // Let's start working with parameters.  Create a function called 'useParams' that takes one parameter and returns that parameter with the all letters capitalized.
 
@@ -245,7 +250,10 @@ function combineStrings() {}
 //    Q14 HELLO
 
 //PUT YOUR CODE HERE
-
+function useParams(str) {
+  return "Q14: " + str.toUpperCase();
+}
+console.log(useParams("hello"));
 // ---------- QUESTION 15 ----------
 // That was a lot of math! Now let's work with strings... Create two variables named 'word1' and 'word2' and assign them any strings you want.  Then create a function called 'biggestStringLength' that takes word1 and word2 as parameters and returns the length of the longer string. If they are of equal length, just return that length.  Stretch your skills by making an empty string and seeing what happens in that situation.
 
@@ -254,3 +262,16 @@ function combineStrings() {}
 // EXAMPLE OUTPUT: (if your word1 was 'Code' and word2 was 'Dream')
 //    Q15: 5
 // PUT YOUR CODE HERE
+let word1 = "Code";
+let word2 = "Dream";
+function biggestStringLength(word1, word2) {
+  if (word1.length > word2.length) {
+    return word1.length;
+  } else if (word1 < word2.length) {
+    return word2.length;
+  } else {
+    return word2.length;
+  }
+}
+
+console.log("Q15: ", biggestStringLength(word1, word2));
