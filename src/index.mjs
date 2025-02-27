@@ -169,7 +169,7 @@ if (age < 30) {
 // STRETCH GOAL: Complete Q9 using a switch statement instead of if elseif else.
 
 // PUT YOUR CODE HERE
-let randomNum = Math.floor(Math.random() * 4) + 1;
+let randomNum = Math.floor(Math.random() * 3) + 1;
 if (randomNum === 1) {
   console.log("It is certain.");
 } else if (randomNum === 2) {
